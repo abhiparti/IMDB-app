@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.mo-li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.mc{
+  width: 200px;
+  /* height: 300px; */
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.mc img{
+  max-width: 100%;
+}
+.header{
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  background-color: #ccc;
+  align-items: center;
+}
+.page-style{
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px 25px 10px;
+}
+.page-no{
+  height: 20px;
+  width: 30px;
+  padding: 5px;
+  background-color: aqua;
+  border: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+.page-no.activeone{
+  background-color: red;
+}
+.add-movie-div{
+  padding: 50px;
+}
+.add-movie-div div{
+  margin: 10px;
+  background-color: #ccc;
+}
+.fav{
+  display: flex;
+}
+.fav .left{
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 30%;
+}
+.fav .right{
+  flex-grow: 1;
+}
+.fav .right table{
+  border-collapse: collapse;
+}
+.fav .right th, .fav .right td{
+  border: 1px solid black;
+  padding: 5px;
+}
+.genre-div{
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  padding: 10px;
+}
+.genre-div .genre{
+  height: 30px;
+  text-align: center;
+  padding: 5px 15px;
+  margin: 5px;
+  background-color: #ccc;
+}
+.genre-div .genre.selected{
+  background-color: blue;
+}
+span{
+  cursor: pointer;
+  color: red;
+}
